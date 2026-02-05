@@ -141,7 +141,7 @@ nav {
 }
 
 .header-logo {
-    height: 160px;
+    height: 110px;
     width: auto;
     display: block;
     transition: height 0.3s ease;
@@ -335,8 +335,8 @@ nav a:hover {
     position: relative;
     background-color: #050505;
     overflow: hidden;
-    padding-top: 380px;
-    /* Lowered significantly to match Russ Brown reference */
+    padding-top: 220px;
+    /* Elevated to bring content up */
     padding-bottom: 60px;
 }
 
@@ -348,11 +348,11 @@ nav a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(5, 5, 5, 0.4), rgba(5, 5, 5, 0.9)),
-        url('/images/hero-bg.png') no-repeat center center;
+    background: linear-gradient(to bottom, rgba(5, 5, 5, 0.2), rgba(5, 5, 5, 0.6)),
+        url('/images/Background Photo.png') no-repeat center center;
     background-size: cover;
     z-index: 1;
-    filter: brightness(0.8) contrast(1.1);
+    filter: brightness(1.1) contrast(1.1);
 }
 
 .hero .c {
@@ -486,25 +486,9 @@ nav a:hover {
     overflow: hidden;
 }
 
+/* Watermark removed per request */
 .mission-pivot::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    width: 100%;
-    height: 100%;
-    background-image: url('../images/Harley-Davidson logo on transparent background.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    filter: grayscale(100%) brightness(30%);
-    /* Charcoal Grey */
-    opacity: 0.1;
-    /* Faded watermark */
-    pointer-events: none;
-    z-index: 0;
+    display: none;
 }
 
 .mission-pivot .c {
