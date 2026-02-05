@@ -393,8 +393,8 @@ nav a:hover {
 
 @media (max-width: 768px) {
     .c {
-        padding: 0 15px;
-        /* ~95% width */
+        padding: 0 5%;
+        /* 90% width */
     }
 
     .hero {
