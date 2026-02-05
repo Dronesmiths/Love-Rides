@@ -591,13 +591,18 @@ nav a:hover {
     }
 
     .board-img-crop {
-        width: 100px;
-        height: 100px;
-        margin-bottom: 20px;
+        width: 70px;
+        height: 70px;
+        margin-bottom: 15px;
     }
 
     .board-card h3 {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+    }
+
+    .board-card p {
+        font-size: 0.65rem;
     }
 }
 
