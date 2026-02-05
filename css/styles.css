@@ -325,7 +325,7 @@ nav a:hover {
     min-height: 90vh;
     max-height: 1100px;
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
     position: relative;
     background-color: #050505;
     overflow: hidden;
@@ -401,6 +401,9 @@ nav a:hover {
 
     .hero .c {
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
     }
 
     .hero-desc {
@@ -413,16 +416,10 @@ nav a:hover {
         flex-direction: column;
         gap: 15px;
         align-items: center;
-        margin-top: 0;
-
-        /* Pin to bottom */
-        position: absolute;
-        bottom: 50px;
-        left: 50%;
-        transform: translateX(-50%);
+        margin-top: auto;
+        /* Push to bottom */
         width: 100%;
-        padding: 0 20px;
-        z-index: 10;
+        padding-bottom: 20px;
     }
 
     .btn {
