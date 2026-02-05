@@ -20,6 +20,31 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
             }
         });
+
+        // Initialize Swiper for Board
+        new Swiper('.board-slider', {
+            slidesPerView: 1.2,
+            spaceBetween: 20,
+            centeredSlides: true,
+            loop: true,
+            initialSlide: 1,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                    centeredSlides: false,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                    centeredSlides: false,
+                }
+            }
+        });
     }
 
     // Impact Counters Animation

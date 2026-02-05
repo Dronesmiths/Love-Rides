@@ -193,7 +193,7 @@ nav a:hover {
 }
 
 .mobile-toggle {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -216,11 +216,34 @@ nav a:hover {
 
 .mobile-toggle span:nth-child(2) {
     width: 100%;
-    /* Full width for clean look */
 }
 
 .mobile-toggle span:last-child {
     margin-bottom: 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    z-index: 1002;
+    background: rgba(0, 0, 0, 0.3);
+    /* Subtle backdrop for readability */
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.nav-links li {
+    display: block;
 }
 
 @media (max-width: 900px) {
@@ -254,18 +277,15 @@ nav a:hover {
         justify-content: center;
         padding-top: 0;
         margin-top: -30px;
-        /* Pull logo up without moving content */
     }
 
     .header-logo {
         height: 200px;
-        /* Massive Brand Impact */
         max-width: 95%;
     }
 
     .h-left::after {
         display: block !important;
-        /* Central divider for mobile top row */
         height: 40px;
     }
 
@@ -282,6 +302,12 @@ nav a:hover {
         position: fixed;
         top: 0;
         right: -100%;
+        bottom: auto;
+        /* Reset desktop bottom */
+        left: auto;
+        /* Reset desktop left */
+        transform: none;
+        /* Reset desktop transform */
         width: 100%;
         height: 100vh;
         background: rgba(5, 5, 5, 0.98);
@@ -293,32 +319,18 @@ nav a:hover {
         transition: right 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
         z-index: 999;
         visibility: hidden;
-        list-style: none;
+        border-radius: 0;
+        /* Reset border radius */
     }
 
+    /* Important: Override nav-active to ensure visibility */
     .nav-links.nav-active {
         right: 0;
         visibility: visible;
     }
-
-    .nav-links a {
-        font-size: 1.5rem;
-        font-weight: 800;
-    }
-
-    /* Toggle Animation */
-    .toggle-active span:nth-child(1) {
-        transform: translateY(10px) rotate(45deg);
-    }
-
-    .toggle-active span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .toggle-active span:nth-child(3) {
-        transform: translateY(-10px) rotate(-45deg);
-    }
 }
+
+
 
 /* Hero Section */
 .hero {
