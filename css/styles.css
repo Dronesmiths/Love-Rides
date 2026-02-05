@@ -413,8 +413,16 @@ nav a:hover {
         flex-direction: column;
         gap: 15px;
         align-items: center;
-        margin-top: 25vh;
-        /* Separate CTAs from text */
+        margin-top: 0;
+
+        /* Pin to bottom */
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        padding: 0 20px;
+        z-index: 10;
     }
 
     .btn {
