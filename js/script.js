@@ -28,9 +28,12 @@ document.addEventListener('DOMContentLoaded', () => {
             centeredSlides: true,
             loop: true,
             initialSlide: 1,
+            observer: true,
+            observeParents: true,
             autoplay: {
                 delay: 2500,
                 disableOnInteraction: false,
+                pauseOnMouseEnter: false,
             },
             breakpoints: {
                 640: {
