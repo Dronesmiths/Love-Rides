@@ -356,7 +356,7 @@ nav a:hover {
 }
 
 .hero-pretitle {
-    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    font-size: clamp(2rem, 5vw, 3.5rem);
     font-family: 'Oswald', sans-serif;
     /* Harley Block Gothic mimic */
     font-weight: 700;
