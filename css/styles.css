@@ -226,33 +226,49 @@ nav a:hover {
 .nav-links {
     display: flex;
     position: fixed;
-    top: 0;
-    right: -100%;
+    /* Fixed to stay on screen even if scrolled */
+    top: 90px;
+    /* Below the hamburger area */
+    left: 30px;
+    /* Aligned with left content */
+    right: auto;
     bottom: auto;
-    left: auto;
-    transform: none;
-    width: 100%;
-    height: 100vh;
-    background: rgba(5, 5, 5, 0.98);
-    backdrop-filter: blur(25px);
+    width: 260px;
+    height: auto;
+    /* Content height */
+
+    background: #0a0a0a;
+    border: 1px solid rgba(255, 138, 0, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 35px;
-    transition: right 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-    z-index: 999;
-    border-radius: 0;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 30px;
+
+    z-index: 1002;
+
+    /* Animation: Fade & Slide Down */
+    opacity: 0;
     visibility: hidden;
-    /* Require js toggle */
+    transform: translateY(-10px);
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    margin: 0;
+    list-style: none;
 }
 
 .nav-links.nav-active {
-    right: 0;
+    opacity: 1;
     visibility: visible;
+    transform: translateY(0);
+    right: auto;
+    /* Ensure right doesn't override */
 }
+
+
 
 .nav-links li {
     display: block;
