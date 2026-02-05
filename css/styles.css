@@ -141,7 +141,7 @@ nav {
 }
 
 .header-logo {
-    height: 110px;
+    height: 80px;
     width: auto;
     display: block;
     transition: height 0.3s ease;
@@ -308,8 +308,8 @@ nav a:hover {
     }
 
     .header-logo {
-        height: 200px;
-        max-width: 95%;
+        height: 90px;
+        max-width: 90%;
     }
 
     .h-left::after {
@@ -335,7 +335,7 @@ nav a:hover {
     position: relative;
     background-color: #050505;
     overflow: hidden;
-    padding-top: 220px;
+    padding-top: 100px;
     /* Elevated to bring content up */
     padding-bottom: 60px;
 }
@@ -381,7 +381,7 @@ nav a:hover {
     color: #FF6A00;
     /* Vivid Orange */
     letter-spacing: -1px;
-    margin: 10px 0;
+    margin: 0 0;
     text-transform: uppercase;
     text-shadow: 0 0 40px rgba(255, 106, 0, 0.3);
 }
@@ -404,7 +404,7 @@ nav a:hover {
     }
 
     .hero {
-        padding-top: 33vh;
+        padding-top: 18vh;
         /* Reduced to lift content on mobile */
         padding-bottom: 60px;
         text-align: center;
