@@ -46,22 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Historic Lineups Slider
-        new Swiper('.lineup-slider', {
-            slidesPerView: 1.2,
-            spaceBetween: 20,
-            loop: false,
-            breakpoints: {
-                640: {
-                    slidesPerView: 2.2,
-                    spaceBetween: 30,
-                },
-                1024: {
-                    slidesPerView: 3.5,
-                    spaceBetween: 30,
-                }
-            }
-        });
+
     }
 
     // Impact Counters Animation

@@ -686,15 +686,19 @@ nav a:hover {
 }
 
 /* History Lineup */
-/* History Lineup Slider */
+/* History Lineup Stack */
 .history-section {
     background: #0a0a0a;
     padding: 100px 0;
 }
 
-.lineup-slider {
+.lineup-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     padding: 40px 0;
-    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .lineup-card {
@@ -704,13 +708,12 @@ nav a:hover {
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-left: 4px solid var(--primary);
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-    height: 100%;
-    /* Ensure uniform height */
+    width: 100%;
 }
 
 .lineup-card:hover {
     background: #181818;
-    transform: translateY(-5px);
+    transform: translateX(10px);
     border-color: var(--primary);
 }
 
