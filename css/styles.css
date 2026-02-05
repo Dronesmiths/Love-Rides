@@ -582,7 +582,22 @@ nav a:hover {
 
 @media (max-width: 640px) {
     .board-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .board-card {
+        padding: 30px 15px;
+    }
+
+    .board-img-crop {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    .board-card h3 {
+        font-size: 1.1rem;
     }
 }
 
