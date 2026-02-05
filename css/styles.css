@@ -618,6 +618,11 @@ nav a:hover {
     }
 }
 
+.board-slider .swiper-slide {
+    height: auto;
+    /* Ensure slides stretch to fill container */
+}
+
 .board-card {
     background: #080808;
     border-radius: 12px;
@@ -630,6 +635,8 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
     text-decoration: none;
+    height: 100%;
+    /* Fill the slide height */
 }
 
 .board-card:hover {
