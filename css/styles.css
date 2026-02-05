@@ -621,7 +621,8 @@ nav a:hover {
 .board-card {
     background: #080808;
     border-radius: 12px;
-    padding: 50px 30px;
+    padding: 30px 15px;
+    /* Reduced padding */
     text-align: center;
     border: 1px solid rgba(255, 138, 0, 0.1);
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -648,10 +649,13 @@ nav a:hover {
 }
 
 .board-img-crop {
-    width: 180px;
-    height: 180px;
+    width: 130px;
+    /* Reduced from 180px */
+    height: 130px;
+    /* Reduced from 180px */
     border-radius: 50%;
-    margin: 0 auto 30px;
+    margin: 0 auto 20px;
+    /* Reduced margin */
     border: 2px solid var(--primary);
     overflow: hidden;
     position: relative;
@@ -660,14 +664,17 @@ nav a:hover {
 
 .board-card h3 {
     color: var(--primary);
-    font-size: 1.4rem;
+    font-size: 1.25rem;
+    /* Reduced to 1.25rem */
     font-weight: 800;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
+    /* Reduced margin */
     letter-spacing: 1px;
 }
 
 .board-card p {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
+    /* Reduced to 0.8rem */
     color: rgba(255, 255, 255, 0.6);
     margin: 0;
     text-transform: uppercase;
