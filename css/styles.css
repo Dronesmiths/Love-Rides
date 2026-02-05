@@ -697,8 +697,13 @@ nav a:hover {
 /* History Lineup Stack */
 .history-section {
     background: #0a0a0a;
-    padding: 60px 0;
-    /* Reduced from 100px */
+    padding: 20px 0;
+    /* Further reduced from 60px */
+}
+
+.history-section .board-heading {
+    margin-top: 0;
+    /* Remove default top margin for this section */
 }
 
 .lineup-stack {
